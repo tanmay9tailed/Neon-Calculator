@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: rgb(43,210,18); */
+  background: rgb(22, 22, 22);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  max-width: 34vw;
+  max-height: 78vh;
+  height: 100vh;
+  width: 100vw;
+  margin: 10vh auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  box-shadow: 0.5px 0px 20px red, -0.5px 0px 20px red, inset 0.5px 0px 20px red,
+    inset -0.5px 0px 20px red;
+  border: 1px solid white;
+}
+.input {
+  max-height: 20vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.input input {
+  max-height: 50px;
+  max-width: 24vw;
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  margin: 45px auto;
+  padding: 12px 30px;
+  border-radius: 17px;
+  background-color: transparent;
+  box-shadow: 0.5px 0px 8px yellow, -0.5px 0px 8px yellow,
+    inset 0.5px 0px 8px yellow, inset -0.5px 0px 8px yellow;
+  border: 1px solid white;
+  color: whitesmoke;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.body {
+  max-height: 70vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+button {
+  padding: 15px 0;
+  width: 6.5vw;
+  border: 0;
+  border-radius: 13px;
+  margin: 2px 4px;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.458);
+  transition: all 0.3s ease;
+  font-weight: 800;
+  font-size: 14px;
+  /* opacity: 0.9; */
+  background-color: transparent;
+  box-shadow: 0.5px 0px 7px blue, -0.5px 0px 7px blue, inset 0.5px 0px 7px blue,
+    inset -0.5px 0px 7px blue;
+  border: 1px solid white;
+  color: whitesmoke;
+  text-align: center;
+}
+#equal {
+  padding: 2vh 13.5vw;
+  background-color: transparent;
+  box-shadow: 0.5px 0px 7px orangered, -0.5px 0px 7px orangered,
+    inset 0.5px 0px 7px orangered, inset -0.5px 0px 7px orangered;
+  border: 1px solid white;
+}
+#equal:active {
+  background-color: rgba(255, 68, 0, 0.566);
+}
+#colour {
+  background-color: transparent;
+  box-shadow: 0.5px 0px 7px yellowgreen, -0.5px 0px 7px yellowgreen,
+    inset 0.5px 0px 7px yellowgreen, inset -0.5px 0px 7px yellowgreen;
+  border: 1px solid white;
+}
+#colour:active {
+  background-color: rgba(255, 255, 0, 0.54);
+}
+button:active {
+  background-color: rgba(0, 0, 255, 0.53);
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 100vw;
+    width: 80vw;
+  }
+  .input input {
+    max-width: 100vw;
+    width: 50vw;
+    margin: 40px 0vw;
+  }
+  button {
+    padding: 15px 0px;
+    max-width: 100vw;
+    width: 14vw;
+  }
+  #equal {
+    padding: 15px 0px;
+    max-width: 100vw;
+    width: 65vw;
+  }
+}
